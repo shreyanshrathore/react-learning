@@ -1,0 +1,24 @@
+<Navbar about = "About text"/>
+
+
+------->>>>>------using props property-------<<<<-------------
+export const Navbar = (props) => {
+  return (
+   
+              <a className="nav-link" href="/">{props.about}</a>
+              }
+              
+-----------default propvalue-------
+
+Navbar.defaultProps = {
+  about: 'Stranger'
+};
+
+
+
+-------------proptype checking wether it is same datatype or not-------------------
+Navbar.propTypes = {
+  name: PropTypes.string
+};
+
+
